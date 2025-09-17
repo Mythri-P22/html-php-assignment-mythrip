@@ -1,1 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Permission Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .letter {
+            max-width: 600px;
+            margin: auto;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h2>Permission Letter</h2>
+        <p>From,<br>
+        Mythri P,<br>
+        III BSC.Computer Science A,<br>
+        PSGR Krishnammal college for womens,<br>
+        Coimbatore,</p>
+
+        <p>30th june,2025</p>
+
+        <p>To,<br>
+        The Head Warden,<br>
+        GRG Main Hostel,<br>
+        Coimbatore.</p>
+
+       
+
+        <p>Respected Sir/Madam,</p>
+
+        <p>I, <strong>Mythri P</strong>, student of  <strong>III BSC.Computer Science</strong>Room no:166. I have plan to visit my house in this weekend. kindly request permission to leave this hostel on 30th june,2025 and return at 4th july,2025</p>
+
+        <p><centre>Thanking you</centre></p>
+
+       
+            <p><div align="right">Sincerely,<br>
+            Mythri P<br>
+            III BSC.CS A</p>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
 
