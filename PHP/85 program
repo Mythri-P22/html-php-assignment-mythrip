@@ -1,0 +1,14 @@
+Steps to get file name from a path in PHP:
+
+1)Store the full file path in a variable.
+
+2)Use the basename() function with the path variable as argument.
+
+3)basename() returns the file name with extension.
+
+4)(Optional) Use pathinfo() with PATHINFO_FILENAME to get file name without extension.
+
+EXAMPLE:
+$path = "/folder/subfolder/file.txt";
+$fileName = basename($path);  // "file.txt"
+$fileNameNoExt = pathinfo($path, PATHINFO_FILENAME);  // "file"
