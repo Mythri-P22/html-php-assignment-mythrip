@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; background: #f4f4f4; color: #333; }
+    header, footer { background: #222; color: #fff; text-align: center; padding: 1.5rem; }
+    nav { background: #444; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav a { color: #fff; text-decoration: none; padding: 1rem; display: block; }
+    nav a:hover { background: #555; }
+    main { padding: 2rem 1rem; }
+    .projects { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .project-card { background: #fff; padding: 1rem; border-radius: 8px; width: 280px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .project-card h2 { margin-bottom: 0.5rem; }
+    .social-links a { color: #0af; margin: 0 0.5rem; text-decoration: none; }
+    .social-links a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      .projects { flex-direction: column; align-items: center; }
+      nav ul { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Miruthulasri</h1>
+    <p>Web Developer</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="projects">
+      <div class="project-card"><h2>Project 1</h2><p>Description</p></div>
+      <div class="project-card"><h2>Project 2</h2><p>Description</p></div>
+      <div class="project-card"><h2>Project 3</h2><p>Description</p></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Miruthulasri</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
