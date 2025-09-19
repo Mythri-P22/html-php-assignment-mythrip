@@ -1,0 +1,21 @@
+<?php 
+function withdraw($balance, $amount) { 
+if ($amount > $balance)  
+throw new Exception("Insufficient Balance!"); 
+if ($amount <= 0)  
+throw new Exception("Invalid withdrawal amount!"); 
+echo "<p class='success'>Withdrawn: $amount</p>"; 
+echo "<p class='info'>Balance: " . ($balance - $amount) . "</p>"; 
+return $balance - $amount; 
+} 
+try { 
+$balance = 5000; 
+echo "<div class='box'><h2>Bank Transaction</h2>"; 
+echo "<p class='info'>Initial Balance: $balance</p>"; 
+$balance = withdraw($balance, 2000); 
+$balance = withdraw($balance, 4000);  
+} catch (Exception $e) { 
+echo "<p class='error'>Error: " . $e->getMessage() . "</p>"; 
+} 
+echo "</div>"; 
+?> 
