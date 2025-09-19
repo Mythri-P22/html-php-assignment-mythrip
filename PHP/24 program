@@ -1,0 +1,23 @@
+<?php
+$str = "  Hello World from PHP!  ";
+
+echo trim($str) . "\n";
+echo strlen($str) . "\n";
+echo str_word_count($str) . "\n";
+echo strrev($str) . "\n";
+echo strtoupper($str) . "\n";
+echo strtolower($str) . "\n";
+echo str_replace("PHP", "Code", $str) . "\n";
+echo substr($str, 6, 5) . "\n";
+echo strpos($str, "World") . "\n";
+?>
+OUTPUT:
+Hello World from PHP!
+25
+4
+  !PHP morf dlroW olleH  
+  HELLO WORLD FROM PHP!  
+  hello world from php!  
+  Hello World from Code!  
+o Wor
+8
