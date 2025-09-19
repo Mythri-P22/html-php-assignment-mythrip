@@ -1,0 +1,20 @@
+<?php
+$arr = ['Apple', 'Banana', 'Cherry'];
+$lower = array_map('strtolower', $arr);
+$upper = array_map('strtoupper', $arr);
+print_r($lower);
+print_r($upper);
+?>
+OUTPUT:
+Array
+(
+    [0] => apple
+    [1] => banana
+    [2] => cherry
+)
+Array
+(
+    [0] => APPLE
+    [1] => BANANA
+    [2] => CHERRY
+)
