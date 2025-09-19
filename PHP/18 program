@@ -1,0 +1,10 @@
+<?php
+$name = "Miruthulasri";
+if (isset($name)) {
+    echo "Variable is set.";
+} else {
+    echo "Variable is not set.";
+}
+?>
+OUTPUT:
+Variable is set.
