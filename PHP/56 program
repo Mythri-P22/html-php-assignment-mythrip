@@ -1,0 +1,11 @@
+list of PHP array sorting functions:
+
+sort() — sort values ascending, keys reset
+rsort() — sort values descending, keys reset
+asort() — sort values ascending, keep keys
+arsort() — sort values descending, keep keys
+ksort() — sort by keys ascending
+krsort() — sort by keys descending
+usort() — custom sort values with callback
+uksort() — custom sort keys with callback
+uasort() — custom sort values with callback, keep keys
