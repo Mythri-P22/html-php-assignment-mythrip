@@ -1,0 +1,25 @@
+i)Writing to file:
+
+$file = fopen("example.txt", "w");
+fwrite($file, "Hello, PHP File Handling!");
+fclose($file);
+
+Explanation:
+
+fopen() opens or creates the file.
+
+fwrite() writes the given text to it.
+
+fclose() closes the file.
+
+ii)Reading to file:
+
+$file = fopen("example.txt", "r");
+$content = fread($file, filesize("example.txt"));
+fclose($file);
+echo $content;
+
+Explanation:
+
+Reads the entire file content into $content.
+
