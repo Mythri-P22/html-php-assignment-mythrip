@@ -1,0 +1,17 @@
+<?php if ($_SERVER["REQUEST_METHOD"]=="POST" && 
+($n=trim($_POST["name"])) && filter_var($_POST["email"], 
+FILTER_VALIDATE_EMAIL) && ($m=trim($_POST["message"]))) : ?>
+
+<h3> Thank you , <?=htmlspecialchars($n) ?> ! </h3>
+<p> your message has been received . We will contact you 
+at : <strong><?=htmlspecialchars($e) ?></strong></p>
+
+<?php else: ?>
+<form method = 'post'>
+<input name = "name" placeholder = "Name" required ><br>
+<input type = "email" name = "email" placeholder = "Email" 
+required ><br>
+<textarea name = "message" placeholder = "message" ></textarea><br>
+<button> Add </button>
+</form>
+<?php endif; ?>
