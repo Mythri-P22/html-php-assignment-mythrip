@@ -1,0 +1,23 @@
+To Read Cookies:
+
+Press F12 to open Developer Tools.
+
+Go to Application (Chrome) or Storage (Firefox) tab.
+
+Click on Cookies > Select your site.
+
+View cookies: name, value, expiry, etc.
+
+🗑️ To Delete Cookies:
+
+Method 1:
+
+In Developer Tools > Cookies, right-click cookie → Delete.
+
+Method 2:
+
+Click 🔒 icon in address bar → Cookies → Remove.
+
+Method 3:
+
+Go to Settings → Privacy → Clear browsing data → Select Cookies → Clear.
