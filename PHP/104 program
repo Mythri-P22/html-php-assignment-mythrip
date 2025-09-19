@@ -1,0 +1,14 @@
+<?php
+$file = "file.txt";
+$n = 3;
+
+$lines = file($file);
+
+if (isset($lines[$n-1])) {
+    echo $lines[$n-1];
+} else {
+    echo "no data";
+}
+?>
+OUTPUT:
+no data
