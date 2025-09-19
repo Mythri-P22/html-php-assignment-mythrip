@@ -1,0 +1,44 @@
+<?php
+// (a) Initiate or resume session
+session_start();
+
+// (b) Check for existing session variable
+if(isset($_SESSION['count'])) {
+    // (c) Increment counter if exists
+    $_SESSION['count']++;
+} else {
+    // New session
+    $_SESSION['count'] = 1;
+}
+
+// (d) Counter stored automatically in $_SESSION
+
+// (e) Provide reload link with session ID
+$link = $_SERVER['PHP_SELF'] . '?PHPSESSID=' . session_id();
+
+echo "Visits: " . $_SESSION['count'];
+echo "<br><a href='$link'>Reload</a>";
+
+// (f) File upload with duplicate check
+$dir = "uploads/";
+if (!is_dir($dir)) mkdir($dir, 0777);
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_FILES['file'])) {
+    $file = $dir . basename($_FILES['file']['name']);
+    if (file_exists($file)) {
+        echo "<br>File already exists!";  // Show error if duplicate
+    } else {
+        if (move_uploaded_file($_FILES['file']['tmp_name'], $file)) {
+            echo "<br>File uploaded.";
+        } else {
+            echo "<br>Upload error.";
+        }
+    }
+}
+?>
+
+<!-- HTML form for uploading file -->
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <input type="submit" value="Upload">
+</form>
