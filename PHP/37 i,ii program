@@ -1,0 +1,31 @@
+i) POP()
+
+<?php
+$fruits = ["Apple", "Banana", "Mango"];
+array_pop($fruits);
+print_r($fruits);
+?>
+
+OUTPUT:
+Array
+(
+    [0] => Apple
+    [1] => Banana
+)
+ 
+ii) PUSH()
+
+<?php
+$fruits = ["Apple", "Banana"];
+array_push($fruits, "Mango", "Orange");
+print_r($fruits);
+?>
+
+OUTPUT:
+Array
+(
+    [0] => Apple
+    [1] => Banana
+    [2] => Mango
+    [3] => Orange
+)
