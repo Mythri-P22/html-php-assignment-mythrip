@@ -1,0 +1,9 @@
+How PHP sessions are stored :
+
+1)PHP generates a unique session ID.
+
+2)The session ID is sent to the browser as a cookie (PHPSESSID).
+
+3)Session data is saved on the server in files named after the session ID.
+
+4)On each request, PHP reads the session file using the session ID to retrieve data.
