@@ -1,0 +1,15 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['photo'])) {
+    $target = 'uploads/' . basename($_FILES['photo']['name']);
+    if (getimagesize($_FILES['photo']['tmp_name']) && move_uploaded_file($_FILES['photo']['tmp_name'], $target)) {
+        echo "Photo uploaded.";
+    } else {
+        echo "Invalid image or upload failed.";
+    }
+}
+?>
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="photo" />
+    <button>Upload</button>
+</form>
