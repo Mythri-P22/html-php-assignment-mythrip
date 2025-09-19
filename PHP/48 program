@@ -1,0 +1,37 @@
+1. Serial Number in a Loop (Array Records)
+<?php
+$names = ['Alice', 'Bob', 'Charlie'];
+
+$record_no = 1;
+foreach ($names as $name) {
+    echo "Record #$record_no: $name<br>";
+    $record_no++;
+}
+?>
+
+
+Output:
+
+Record #1: Alice
+Record #2: Bob
+Record #3: Charlie
+
+2. Record Number with Pagination Calculation
+<?php
+$page = 3;      // current page
+$limit = 5;     // records per page
+$start = ($page - 1) * $limit + 1;
+
+for ($i = 0; $i < $limit; $i++) {
+    echo "Record #" . ($start + $i) . "<br>";
+}
+?>
+
+
+Output:
+
+Record #11
+Record #12
+Record #13
+Record #14
+Record #15
