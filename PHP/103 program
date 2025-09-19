@@ -1,0 +1,13 @@
+<?php
+session_start();
+
+if (isset($_SESSION['pageview'])) {
+    $_SESSION['pageview']++;
+} else {
+    $_SESSION['pageview'] = 1;
+}
+
+echo "Page views: " . $_SESSION['pageview'];
+?>
+OUTPUT:
+Page views: 1
