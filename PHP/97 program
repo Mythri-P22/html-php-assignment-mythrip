@@ -1,0 +1,13 @@
+PHP Session Functions and behaviour:
+
+1)session_start(): Starts or resumes a session.
+
+2)session_destroy(): Deletes all session data.
+
+3)session_unset(): Removes all session variables.
+
+4)session_id(): Gets or sets the session ID.
+
+5)session_regenerate_id(): Creates a new session ID (improves security).
+
+6)session_write_close(): Saves session data and ends session.
