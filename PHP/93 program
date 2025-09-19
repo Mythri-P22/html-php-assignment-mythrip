@@ -1,0 +1,21 @@
+<?php
+
+if (isset($_COOKIE['visit_count'])) {
+    $count = $_COOKIE['visit_count'] + 1;
+} else {
+    $count = 1;
+}
+
+// Set or update the cookie (expires in 1 day)
+setcookie('visit_count', $count, time() + 86400);
+
+echo "You have visited this page $count times.";
+?>
+
+OUTPUT:
+
+First visit:
+You have visited this page 1 times.
+
+Next visit (after reload):
+You have visited this page 2 times.
