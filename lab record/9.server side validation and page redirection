@@ -1,0 +1,17 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = trim($_POST['name'] ?? '');
+    
+    if (empty($name)) {
+        echo "Name is required.";
+    } else {
+        header('Location: success.php');
+        exit;
+    }
+}
+?>
+
+<form method="post">
+    Name: <input type="text" name="name" />
+    <button type="submit">Submit</button>
+</form>
