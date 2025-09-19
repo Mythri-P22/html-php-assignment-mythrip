@@ -1,0 +1,19 @@
+<?php
+session_start();
+$_SESSION['user'] = "John";
+print_r($_SESSION);
+
+unset($_SESSION['user']);
+print_r($_SESSION);
+
+session_destroy();
+?>
+
+OUTPUT:
+Array
+(
+    [user] => John
+)
+Array
+(
+)
