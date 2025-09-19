@@ -1,0 +1,18 @@
+<?php
+$a = 10;
+$b = 3;
+
+echo "Addition: " . ($a + $b) . "\n";        
+echo "Subtraction: " . ($a - $b) . "\n";    
+echo "Multiplication: " . ($a * $b) . "\n";   
+echo "Division: " . ($a / $b) . "\n";         
+echo "Modulus: " . ($a % $b) . "\n";       
+echo "Exponent: " . ($a ** $b) . "\n";       
+?>
+OUTPUT:
+Addition: 13
+Subtraction: 7
+Multiplication: 30
+Division: 3.3333333333333
+Modulus: 1
+Exponent: 1000
