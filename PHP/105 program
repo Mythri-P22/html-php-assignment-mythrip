@@ -1,0 +1,16 @@
+<?php
+function getWeekDates($week, $year) {
+    $date = new DateTime();
+    $date->setISODate($year, $week);
+    $start = $date->format('Y-m-d');
+    $date->modify('+6 days');
+    $end = $date->format('Y-m-d');
+    return [$start, $end];
+}
+
+list($start, $end) = getWeekDates(12, 2014);
+echo "Start: $start, End: $end";
+?>
+
+OUTPUT:
+Start: 2014-03-17, End: 2014-03-23
