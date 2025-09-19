@@ -1,0 +1,42 @@
+<?php
+$name = '';
+$error = '';
+$greeting = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = trim($_POST["name"]);
+
+    if (empty($name)) {
+        $error = "Error: Name field cannot be empty.";
+    } else {
+        $greeting = "Hello, Welcome to Everyone!<br>Have a nice day!!";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Form</title>
+</head>
+<body>
+
+<form method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" id="name">
+    <button type="submit">Submit</button>
+</form>
+
+<?php if ($error): ?>
+    <p style="color: red;"><?php echo $error; ?></p>
+<?php elseif ($greeting): ?>
+    <p><?php echo $greeting; ?></p>
+<?php endif; ?>
+</body>
+</html>
+
+OUTPUT:
+Have a nice day!!"; } } ?>
+Enter your name: 
+MIRUTHULASRI
+ Submit
