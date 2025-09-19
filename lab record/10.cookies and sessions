@@ -1,0 +1,18 @@
+<?php
+session_start();
+if(!isset($_COOKIE['user'])) setcookie("user","Anu",time()+3600,"/");
+if(!isset($_SESSION['username'])) $_SESSION['username']="student";
+if(isset($_POST['logout'])){
+    session_destroy();
+    setcookie("user","",time()-3600,"/");
+    echo "Session & Cookie cleared. Refresh!";
+}
+?>
+<html>
+<body>
+<h3>Session & Cookie Demo</h3>
+<p>Cookie: <?= $_COOKIE['user'] ?? "Not set (refresh)" ?></p>
+<p>Session: <?= $_SESSION['username'] ?? "Not set" ?></p>
+<form method="post"><button name="logout">Logout</button></form>
+</body>
+</html>
