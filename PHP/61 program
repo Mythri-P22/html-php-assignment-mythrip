@@ -1,0 +1,28 @@
+steps to delete an element from a PHP array:
+
+Find the element’s key/index you want to delete.
+
+Use unset() to remove the element by key.
+
+(Optional) Use array_values() if you want to reindex numeric keys.
+
+Example:
+<?php
+$arr = ['a', 'b', 'c', 'd'];
+
+// Step 1 & 2: Remove element at index 1 ('b')
+unset($arr[1]);
+
+// Optional Step 3: Reindex the array
+$arr = array_values($arr);
+
+print_r($arr);
+?>
+
+Output:
+Array
+(
+    [0] => a
+    [1] => c
+    [2] => d
+)
