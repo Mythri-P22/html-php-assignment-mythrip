@@ -1,0 +1,7 @@
+<?php
+$text = "The Thing will come to you soon";
+$result = preg_replace('/\bthe\b/i', 'best', $text, 1);
+echo $result;
+?>
+OUTPUT:
+best Thing will come to you soon
