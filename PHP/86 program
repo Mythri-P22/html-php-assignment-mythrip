@@ -1,0 +1,24 @@
+Common PHP File Functions:
+
+1)fopen() — open file
+
+2)fwrite() — write to file
+
+3)fread() — read from file
+
+4)fclose() — close file
+
+5)file_get_contents() — read whole file
+
+6)file_put_contents() — write whole file
+
+7)unlink() — delete file
+
+8)file_exists() — check if file exists
+
+EXAMPLE:
+<?php
+file_put_contents("test.txt", "Hello PHP!");
+echo file_get_contents("test.txt");
+unlink("test.txt");
+?>
