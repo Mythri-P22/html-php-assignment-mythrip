@@ -1,0 +1,9 @@
+<?php
+session_start();           // Start the session
+$_SESSION['username'] = "John";  // Set a session variable
+
+echo "Hello, " . $_SESSION['username'];  // Access and display session variable
+?>
+
+OUTPUT:
+Hello, John
