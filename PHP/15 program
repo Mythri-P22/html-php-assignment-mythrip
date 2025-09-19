@@ -1,0 +1,15 @@
+<?php
+$number = (int)readline("Enter a number: ");
+$sum = 0;
+$temp = $number;
+while ($temp > 0) {
+    $digit = $temp % 10;
+    $sum += $digit;
+    $temp = (int)($temp / 10);
+}
+echo "Sum of the digits of $number is: $sum\n";
+?>
+
+OUTPUT:
+Enter a number: 24
+Sum of the digits of 24 is: 6
