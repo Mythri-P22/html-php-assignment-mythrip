@@ -1,0 +1,14 @@
+<?php
+$text = "Email me at alice@example.com or bob123@test.com.";
+
+preg_match_all('/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i', $text, $matches);
+
+print_r($matches[0]);
+?>
+
+OUTPUT:
+Array
+(
+    [0] => alice@example.com
+    [1] => bob123@test.com
+)
