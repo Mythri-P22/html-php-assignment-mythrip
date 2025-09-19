@@ -1,0 +1,32 @@
+1) Purpose:
+
+PHP sessions are used to store and manage user data across multiple pages during a single visit (session) to a website.
+
+2) Functionality:
+
+session_start() begins a new or resumes an existing session.
+
+PHP assigns a unique session ID to each user.
+
+Data is stored on the server in the $_SESSION superglobal.
+
+Session data persists across pages until the session ends or is destroyed
+
+3) Application: Maintaining a Shopping Cart
+
+Start session: session_start();
+
+Add item: $_SESSION['cart'][] = "Product A";
+
+Access cart: $_SESSION['cart']
+
+Cart stays available across all pages during the session.
+
+EXAMPLE:
+session_start();
+$_SESSION['cart'][] = "Product A";  // Add item
+
+// Display cart
+foreach ($_SESSION['cart'] as $item) {
+    echo $item . "<br>";
+}
