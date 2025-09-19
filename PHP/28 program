@@ -1,0 +1,16 @@
+<?php
+$a = 10;
+$b = "10";
+$c = 20;
+
+var_dump($a == $b);   
+var_dump($a === $b);  
+var_dump($a == $c);  
+var_dump($a === $c);  
+?>
+
+OUTPUT:
+bool(true)
+bool(false)
+bool(false)
+bool(false)
