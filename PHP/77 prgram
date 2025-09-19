@@ -1,0 +1,35 @@
+1. Network Control Functions
+
+Handle data routing and traffic flow.
+
+Examples: Routing, Forwarding, Traffic Engineering.
+
+2. Network Management Functions
+
+Monitor, configure, and maintain the network.
+
+Examples: Fault Management, Performance Monitoring, Configuration.
+
+3. Network Service Functions
+
+Provide essential services to users/devices.
+
+Examples: DNS, DHCP, Authentication, Load Balancing.
+
+4. Network Information Functions
+
+Gather and share network status or structure.
+
+Examples: Topology Discovery, Network Monitoring, Reporting.
+
+5. Security Functions
+
+Protect network from threats and unauthorized access.
+
+Examples: Firewall, VPN, IDS/IPS, Encryption.
+
+6. Access and Mobility Functions
+
+Manage user access and movement across the network.
+
+Examples: Access Control, Mobility Management, Handover.
