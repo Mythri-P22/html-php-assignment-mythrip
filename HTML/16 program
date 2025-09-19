@@ -1,0 +1,24 @@
+<?php
+function addNumbers($a, $b) {
+    return $a + $b;
+}
+$res = ($_SERVER["REQUEST_METHOD"] == "POST") ? 
+    "The sum is: " . addNumbers($_POST['num1'], $_POST['num2']) : "";
+?>
+
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<form method="post">
+    <input type="number" name="num1" step="any" placeholder="Number 1" required>
+    <input type="number" name="num2" step="any" placeholder="Number 2" required>
+    <button>Add</button>
+</form>
+
+<?php 
+if ($res) echo "<h3>$res</h3>"; 
+?>
+
+</body>
+</html>
